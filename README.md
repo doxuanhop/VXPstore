@@ -1,2 +1,2 @@
 # VXPstore
-VXPstore By DXH
+# VXPstore By Developers DXH
