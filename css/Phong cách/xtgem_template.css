@@ -1,0 +1,186 @@
+::-webkit-scrollbar { height:13px; width:13px }
+::-webkit-scrollbar-track { -webkit-box-shadow:inset 2px 2px 3px #e0e0e0; background:#fff; border:0 solid #000 }
+::-webkit-scrollbar-thumb { -webkit-box-shadow:inset 2px 2px 3px #00a5ff; background:#00a5ff }
+html { 
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    background-color: #f7f7f7;
+}
+body {
+  background-color: #ffffff;
+  color: #222222;
+  margin: 0 auto;
+  font-family: sans-serif;
+  font-size: 13px;
+  text-align: left;
+  padding: auto;
+  border: 1px solid #f7f7f7;
+  max-width: 950px;
+}
+
+body, button, input, select, textarea {
+  font-family: sans-serif;
+}
+/* lien ket */
+a {
+    color: #71bc00;
+    text-decoration: none;
+}
+a:visited {
+    color: #71bc00;
+}
+a:hover {
+  color: #71bc00;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+hr{border-bottom:2px solid #66b64c;}
+
+img {
+  border-style: none;
+}
+
+/* @XT_title: Navigation */
+.xt_navigation {
+  background: /*$topbgc*/#ffffff
+}
+/* @XT_title: Navigation item */
+.xt_navigation span {
+  display: inline-block;
+  margin: 0;
+  padding: 2px;
+}
+/* @XT_title: Navigation link */
+.xt_navigation span a {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  color: /*$toptxtc*/#71bc00/*e*/;
+  padding: 2px;
+  margin: 0;
+}
+/* @XT_title: Navigation item inner */
+.xt_navigation span span {
+  margin: 0;
+}
+/* @XT_title: Navigation active item */
+.xt_navigation span.active {
+  background: /*$topbgc*/#ffffff/*e*/;
+  text-decoration: none;
+  border-bottom: solid 3px /*$c13*/#71bc00/*e*/;
+}
+/* @XT_title: Navigation active item link */
+.xt_navigation span.active a, .xt_navigation span.active span {
+  text-decoration: none;
+  color: /*$c2*/#50A625/*e*/;
+}
+/* LOGO VXPSTORE */
+.logo {
+    border: 0;
+    vertical-align: middle;
+    width:101px;
+    height:69px;
+}
+
+/* HEADER */
+#header{
+    margin-top: 50px;
+    background: #ffffff;
+    margin:3px 0px 0px 0px;
+    padding:5px;
+    color:#222222;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+#header a{
+    color:#222222; 
+}
+/* FOOTER */
+#footer{
+    margin-top: 50px;
+    background: #f7f7f7;
+    margin:3px 0px 0px 0px;
+    padding:5px;
+    color:#555555;
+    text-align:center; 
+}
+#footer a{
+    color:#222222;
+    font-size:10px; 
+}
+/* MENU */
+#menu {
+  color:#222222;
+  background:#ffffff;
+  padding:3px;
+  font-weight:bold;
+}
+#menu span {
+  display:inline-block;
+  margin:0;
+  padding:2px;
+}
+#menu span a {
+  display:inline-block;
+  font-size:14px;
+  font-weight:bold;
+  color:#71bc00;
+  padding:2px;
+  margin:0;
+}
+#menu span span {
+  margin:0;
+  border-bottom: solid 3px /*$c13*/#71bc00/*e*/;
+}
+.adv{ padding:3px; border-top:1px solid #E8E8E8; background:#F7F7F7; }
+.adv a{ color:#7B7B7B; padding-left:12px; background:url(http://sinhvn.wap.sh/images/muiten.gif) no-repeat left; }
+.adv a:hover{ color:#FE9B00; background:url(http://sinhvn.wap.sh/images/muiten.gif) no-repeat left; }
+.link {
+   text-decoration: none;
+   line-height: 1;
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
