@@ -1,1 +1,388 @@
+/* CSS V0.1 2023 BY DO XUAN HOP !!! */
+li{ list-style: none;
+    margin: 0 0 10px 0;
+    padding: 5px;
+    background: #ffffff;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
+    box-shadow: 0 1px 2px rgb(0 0 0 / 7%);
+    border-radius: 3px;
+}
+
+.photos{
+  border-style: none;
+}
+/* CSS !!! */
+.app-icon {
+    border: 0;
+    vertical-align: middle;
+    width:200px;
+    height:200px;
+}
+
+.picmovie {
+    border: 0;
+    vertical-align: middle;
+    width:140px;
+    height:200px;
+   position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform .5s cubic-bezier(.27, .06, .17, .99);	
+}
+.picmovie:hover {
+  transform: translateY(-20px);
+  transition: transform .1s cubic-bezier(.27, .06, .17, .99);
+}
+.boxplay{
+    margin: 0 auto;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.boxplay:after {
+    content: "";
+    bottom: 3px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow:
+        0 10px 5px rgba(0,0,0,0.15);
+}
+.download {
+  text-align: center;
+  margin-top: 25px;
+}
+.download .btn {
+  border-radius: 9px;
+  color: #71bc00;
+  text-decoration: none;
+  font-family: 'Century Gothic',sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight; bold;
+}
+.download .btn:hover {
+  color: #586C10;
+}
+.noticeAddonKpi {
+    border: 1px dotted #b00;
+    color: #e71708;
+    background: #fed url(xtgem_template.css) no-repeat 1em 50%;
+}
+
+/* box card */
+.layout {
+ margin: 0 0 10px 0;
+    padding: 5px;
+    background: #ffffff;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+  margin: 0 -5px;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.updated {
+  margin: 0 0 10px 0;
+    padding: 5px;
+    background: #ffffff;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+    border-radius: 3px;
+}
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #ffffff;
+}
+/* link */
+.link {
+   text-decoration: none;
+   line-height: 1; 
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+.tags {
+    display: block;
+    color: #000;
+    padding: 10px;
+    padding: 10px;
+    border-top: 10px solid #E8E8E8;
+    background: #F7F7F7;
+}
+.tags a {
+    display: block;
+    color: #000;
+    padding: 5px;
+}
+.btn_next {
+  text-align: center;
+  margin-top: 25px;
+}
+.next {
+  border-radius: 9px;
+  color: #D0393F;
+  text-decoration: none;
+  font-family: 'Century Gothic',sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight; bold;
+}
+.next:hover {
+  color: #BB3337;
+}
+
+.nextpage {
+  border-radius: 9px;
+  color: #D0393F;
+  text-decoration: none;
+  font-family: 'Century Gothic',sans-serif;
+  border: 3px solid;
+  padding: 7px 13px;
+  font-weight; bold;
+}
+.nextpage:hover {
+  color: #BB3337;
+}
+
+/* BỘ SƯU TẦM */
+
+ .masonry {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+.item {
+    display: inline-block;
+    background: #fff;
+    padding: 1em;
+    margin: 0 0 1.5em;
+    width: 100%;
+	-webkit-transition:1s ease all;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+.item img{max-width:100%;}
+
+/* default filelist CSS! */
+
+.filelist_paging {
+  text-align: center;
+  margin: 5px auto;  
+  padding: 7px;
+  border-width: 2px;
+  font-size: 16px;
+  line-height: 21px;
+  padding: 5px;
+  color: /*$tc*/#212121/*e*/;
+  line-height: 18px;
+  font-size: 12px;
+}
+.filelist_paging span {
+    padding: 10px;
+    text-decoration: none;
+    background-color: /*$c_02*/#71bc00/*e*/;
+    color: /*$bc*/#f0f0f0/*e*/;
+    padding: 2px;
+    margin: 0 2px
+}
+.filelist_paging a {
+   text-decoration: none;
+   line-height: 1; 
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+/* List Store CSS! */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+*{
+	list-style: none;
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+
+.view_item img{
+	width: 80px;
+  height: 80px;
+  border-radius:8%;
+-moz-border-radius:8%;
+-webkit-border-radius:8%;
+}
+
+
+.view_item .title{
+    text-align: left;
+	color: rgb(32,33,36);
+    fill: rgb(32,33,36);
+    stop-color: rgb(32,33,36);
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: .0142857143em;
+    line-height: 1.25rem;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: -.2px; 
+}
+
+.view_item .content{
+	margin: 5px 0;
+	color: #71bc00;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1rem;
+    font-size: .75rem;
+    letter-spacing: .025em;
+    font-weight: 400;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing: .2px;
+  
+}
+
+
+.grid-view{
+	width: 100%;
+}
+
+.grid-view .view_item {
+	display: inline-block;
+    border: 0px solid #e2efe1;
+    width: 90px;
+    padding: 1px 1px 1px 1px;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid-view .view_item .vi_left{
+	margin-bottom: 10px;
+}
+
+.grid-view .view_item .link {
+   text-decoration: none;
+   line-height: 1;
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 5px 5px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.grid-view .view_item .link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   transition: transform .25s ease-out;
+}
+
+.grid-view .view_item .link:hover { 
+   color: #fff; 
+}
+.grid-view .view_item .link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
+
+.ads{
+    padding: 16px 12px 16px 12px;
+    border-bottom: 1px solid #dadce0;
+    box-shadow: none;
+    line-height: 1.58;
+    background: #fff;
+    border-radius: 8px;
+    padding: 0 0 16px 0;
+}
 
